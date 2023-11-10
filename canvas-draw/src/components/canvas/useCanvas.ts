@@ -11,6 +11,8 @@ export const useCanvas = (canvasRef: React.MutableRefObject<HTMLCanvasElement | 
 
     const instance = new CanvasService(canvasRef.current);
     setInstance(instance);
+
+    return instance.clearWatchEvents();
   }, [canvasRef]);
 
   return {
