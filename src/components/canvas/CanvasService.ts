@@ -34,6 +34,7 @@ export class CanvasService {
     this.ctx.beginPath();
     this.ctx.moveTo(e.offsetX, e.offsetY);
   }
+
   onMouseUpHandler() {
     this.mouseDown = false;
   }
@@ -45,6 +46,7 @@ export class CanvasService {
     this.canvas.addEventListener('mouseup', this.onMouseUpHandler.bind(this));
     this.canvas.addEventListener('mouseleave', this.onMouseUpHandler.bind(this));
   }
+
   clearWatchEvents() {
     this.canvas.removeEventListener('mousemove', this.onMouseMoveHandler);
     this.canvas.removeEventListener('mouseleave', this.onMouseLeaveHandler);
@@ -59,5 +61,10 @@ export class CanvasService {
     }
     this.ctx.clearRect(0, 0, this.canvas.width ?? 0, this.canvas.height ?? 0);
     this.ctx.closePath();
+  }
+
+  // TODO setSettings mb ?
+  setStroke(color: string) {
+    this.ctx.strokeStyle = color;
   }
 }

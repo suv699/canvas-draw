@@ -1,0 +1,29 @@
+.tools-container {
+  height: 40px;
+  border-bottom: 1px solid;
+  display: flex;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+}
+
+.tools-item {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &.active {
+    color: rgb(38, 0, 255);
+    background: #c8c8c88a;
+    cursor: pointer;
+  }
+}
+
+.tool-icon {
+}
+.tool-name {
+}
