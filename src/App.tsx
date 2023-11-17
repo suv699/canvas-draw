@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './App.css';
 import Layout from './components/Layout';
 import CanvasLayout from './components/canvas/CanvasLayout';
@@ -11,4 +9,5 @@ function App() {
     </Layout>
   );
 }
+
 export default App;
